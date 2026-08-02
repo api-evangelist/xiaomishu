@@ -1,0 +1,21 @@
+# Xiaomishu (订餐小秘书)
+
+> Xiaomishu ("Dining Little Secretary") is a Shanghai restaurant reservation and dining-marketing technology company operating since 2005 at xiaomishu.com and the 021-57575777 booking hotline. Its platforms — 订餐小秘书 (Xiaomishu), 宴位 (Yanwei, AI-driven dynamic pricing for restaurant private rooms), and 高能店长 (Gaoneng Dianzhang) — let diners book tables and discounted private-room packages at Shanghai restaurants via web, WAP, phone, WeChat mini-program, and customer-service channels. The company publishes no public developer API, developer portal, or machine-readable API surface.
+
+## Company
+
+- [Website (订餐小秘书)](http://www.xiaomishu.com/): Shanghai restaurant search and online reservation site (HTTP only; the HTTPS certificate does not match the domain)
+- [About / Contact (关于我们)](http://www.xiaomishu.com/about/aboutus/): company profile — 22 years in dining reservations, Yanwei dynamic-pricing products, strategic investment from Ctrip and SIG
+- [Mobile site](https://m.xiaomishu.com/): WAP booking surface (also m.57.cn)
+- [Food-safety management rules (餐饮安全管理办法)](http://www.xiaomishu.com/about/rule/)
+
+## API surface
+
+- No public API, developer portal, OpenAPI, SDKs, or docs were found as of 2026-07-21.
+- api.xiaomishu.com resolves but serves a closed backend (HTTP 403, nginx) with no published documentation.
+- /.well-known/security.txt, /openid-configuration, /oauth-authorization-server, /api-catalog, /ai-plugin.json, and /llms.txt all return 404 on www.xiaomishu.com.
+
+## API Evangelist artifacts
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/xiaomishu/refs/heads/main/apis.yml): APIs.json profile for this company
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/xiaomishu/refs/heads/main/security/xiaomishu-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe results

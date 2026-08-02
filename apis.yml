@@ -1,7 +1,15 @@
 aid: xiaomishu
-name: xiaomishu
-description: xiaomishu is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Xiaomishu (订餐小秘书)
+description: 'Xiaomishu (订餐小秘书, "Dining Little Secretary") is a Shanghai-based restaurant
+  reservation and dining-marketing technology company operating since 2005 via xiaomishu.com
+  and the 021-57575777 booking hotline. Its platforms — 订餐小秘书, 宴位 (Yanwei, an
+  AI-driven dynamic-pricing product for restaurant private rooms), and 高能店长 — let
+  diners book tables and discounted private-room packages at Shanghai restaurants through
+  web, WAP (m.xiaomishu.com / m.57.cn), phone, and WeChat mini-program channels. The company
+  cites strategic investment from Ctrip and SIG and was surfaced in the API Evangelist
+  network as a Qiming Venture Partners portfolio lead. It publishes no public developer
+  API, portal, or machine-readable surface; api.xiaomishu.com serves a closed (HTTP 403)
+  backend, and the main site is HTTP-only with a mismatched HTTPS certificate.'
 url: https://raw.githubusercontent.com/api-evangelist/xiaomishu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,29 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: http://www.xiaomishu.com/favicon.ico
 tags:
 - Company
+- Restaurants
+- Reservations
+- Dining
+- Food
+- Shanghai
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/xiaomishu-domain-security.yml
 - type: Website
-  url: https://xiaomishu.com
+  url: http://www.xiaomishu.com
+- type: About
+  url: http://www.xiaomishu.com/about/aboutus/
+- type: MobileSite
+  url: https://m.xiaomishu.com/
+- type: LLMsTxt
+  url: llms/xiaomishu-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
